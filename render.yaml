@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: sunabaco-mailer
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: GMAIL_USER
+        value: あなたのGmailアドレス
+      - key: GMAIL_APP_PASSWORD
+        value: アプリパスワード
