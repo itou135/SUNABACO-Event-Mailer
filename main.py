@@ -74,9 +74,8 @@ def send_event_email():
 def schedule_task():
     print("📅 スケジュールタスクを開始します...")
     last_sent_date = None
-    target_hour = 19  # JSTで毎朝5時に送信
-    target_minute = 17
-
+    target_hour = 11  # JSTで毎朝5時に送信
+    target_minute = 30
     while True:
         now = get_jst_now()
         current_date = now.date()
